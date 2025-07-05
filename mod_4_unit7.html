@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Module 6: Group Project - Database Design Report</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <style>
+        p {
+            text-align: left; /* Aligns all paragraph text to the left */
+        }
+    </style>
+</head>
+<body class="is-preload">
+
+    <!-- Navigation back to module -->
+    <nav id="nav">
+        <ul class="container">
+            <li><a href="mod_4_main.html">Back to Module 4: Deciphering Big Data</a></li>
+        </ul>
+    </nav>
+
+   <!-- Unit Content -->
+<article id="unit-content" class="wrapper style1">
+    <div class="container">
+        <section id="gibbs-reflection">
+            <h2>Reflective Piece: Normalization and Database Build (Using Driscoll’s Model)</h2>
+
+            <!-- Buttons side by side -->
+            <div class="button-row">
+                <a href="docs/Unit 7 - Normalization Task.pdf" class="button large scrolly" target="_blank">View Project Submission 1</a>
+                <a href="docs/Unit 7 - Database Build Task.pdf" class="button large scrolly" target="_blank">View Project Submission 2</a>
+            </div>
+            <br>
+  <section id="unit7-reflection">
+
+
+  <h3>What?</h3>
+  <p>
+    I was tasked with normalizing a sample dataset that contained a range of student records. The data was messy, with multiple repeating values and inconsistent formatting. I went through each stage of normalization—1NF, 2NF, and 3NF—showcasing how the structure evolved with each step. As I moved from the unnormalized form to a fully normalized structure, the dataset expanded into a network of interrelated tables. Once this was complete, the second part of the task involved building the normalized tables into a real database. I chose Supabase for this, as I was familiar with its PostgreSQL foundation and developer-friendly tools. I manually created the tables, defined primary and foreign keys, enforced referential integrity, and inserted sample data. I also created a UML diagram to visually represent the relationships and structure of the database.
+  </p>
+
+  <h3>So what?</h3>
+  <p>
+    Although I had worked with SQL databases before and even designed a few in practical settings, I had never been explicitly taught the theory of normalization. What surprised me was how much of what I had done instinctively in the past—such as breaking data into logical tables and avoiding duplication—mapped directly onto formal normalization principles. There was something humbling about realizing that decisions I had made based on what "felt right" actually followed structured rules that had existed long before I learned them. It gave language and structure to my instincts, and allowed me to critically assess my previous designs with a more technical lens.
+  </p>
+  <p>
+    That said, the assignment also highlighted gaps in my process. While I was confident in building and populating the database, I initially underestimated the importance of clearly articulating the purpose of each normalization step and how it improves scalability, performance, and data integrity. I had focused so heavily on completing the task correctly that I almost missed an opportunity to reflect on <em>why</em> these structures matter and how they prevent common data issues. Furthermore, I realized that while I was technically proficient in setting up the database, I hadn’t given much thought to documenting it in a way that would be accessible to others or demonstrate strategic decision-making.
+  </p>
+
+  <h3>Now what?</h3>
+  <p>
+    As I progress further into my data science journey, I know I will encounter many more database systems—some of which I’ll design from scratch. This experience has given me a foundational framework for those future decisions. Rather than relying solely on intuition, I now have formal structures I can apply. I will be more intentional in how I justify my database design choices, particularly in collaborative settings or client-facing roles, where being able to explain the rationale behind decisions is just as important as implementing them.
+  </p>
+  <p>
+    I also plan to apply normalization concepts proactively, especially when evaluating inherited datasets, which are often inconsistent and disorganized. More critically, I will focus on improving how I communicate and document these processes, ensuring that they reflect both technical soundness and thoughtful design. Lastly, I’ve learned to question my own instincts—not to doubt them, but to validate them with theory and best practices—because professionalism in data design is not just about knowing how to do something, but knowing <em>why</em> it should be done that way.
+  </p>
+
+  <h3>References</h3>
+  <ul>
+    <li>RelationalDBDesign (n.d.) <em>Relationships and referential integrity</em>. Available at: <a href="https://www.relationaldbdesign.com/database-analysis/module7/relationships-referential-integrity.php" target="_blank">https://www.relationaldbdesign.com/database-analysis/module7/relationships-referential-integrity.php</a></li>
+    <li>Supabase (n.d.) <em>Supabase Documentation</em>. Available at: <a href="https://supabase.com/docs" target="_blank">https://supabase.com/docs</a></li>
+    <li>University of Edinburgh (n.d.) <em>Reflectors’ Toolkit: Driscoll Model</em>. Available at: <a href="https://www.ed.ac.uk/reflection/reflectors-toolkit/reflecting-on-experience/driscoll-model" target="_blank">https://www.ed.ac.uk/reflection/reflectors-toolkit/reflecting-on-experience/driscoll-model</a></li>
+  </ul>
+</section>
+
+
+            
+            
+        </div>
+    </article>
+</body>
+</html>
