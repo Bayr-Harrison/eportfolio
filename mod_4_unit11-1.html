@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Unit 11: Individual Project - Executive Summary</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <style>
+        p {
+            text-align: left; /* Aligns all paragraph text to the left */
+        }
+    </style>
+</head>
+<body class="is-preload">
+
+    <!-- Navigation back to module -->
+    <nav id="nav">
+        <ul class="container">
+            <li><a href="mod_4_main.html">Back to Module 4: Deciphering Big Data</a></li>
+        </ul>
+    </nav>
+
+   <!-- Unit Content -->
+<article id="unit-content" class="wrapper style1">
+  <div class="container">
+    <section id="gibbs-reflection">
+      <h2>Reflective Piece: Implementation and Evaluation<br>(Using Gibbs' Reflective Cycle)</h2>
+
+      <!-- Buttons side by side -->
+      <div class="button-row">
+        <a href="docs\Executive Summary - Unit 11.docx" class="button large scrolly" target="_blank">View Executive Summary</a>
+      </div>
+      <br>
+
+      <section id="unit11-reflection">
+
+        <h3>1. Description</h3>
+        <p>
+          For the second part of my MSc database project, I implemented the logical database design proposed in my earlier submission and produced an executive summary evaluating the outcome. The assignment allowed two options: students could either build and evaluate a working database or conduct a theoretical analysis based on academic sources. Given my background working at an aviation college, I chose to build the system, drawing on my professional experience managing student and assessment records.
+        </p>
+        <p>
+          The technical implementation was relatively straightforward. Much of the work aligned with what I already do in my job, and I used Supabase to host a PostgreSQL database. The more demanding part was critically evaluating my initial design decisions, many of which were based on instinct. I had chosen a relational model early without fully considering NoSQL alternatives, assuming structured academic data naturally suited SQL. It was only after a thorough literature review that I could properly justify my choices and assess the broader landscape of database models and hosting options.
+        </p>
+
+        <h3>2. Feelings</h3>
+        <p>
+          I approached this second phase more cautiously than the first. Feedback from the earlier assignment made it clear that, while some of my choices were sound, I hadn’t always explained their rationale. This time, I was more deliberate and reflective. As I explored academic literature on database design, normalization, and GDPR, I was relieved to find many of my decisions, like choosing SQL or using UUIDs, aligned with best practices.
+        </p>
+        <p>
+          At the same time, I felt a degree of uncertainty. I hadn’t yet received feedback or a grade, and I wasn’t sure whether I had demonstrated enough critical analysis. There’s a vulnerability in putting your workplace knowledge into an academic framework, especially when it was previously undocumented or driven by hands-on familiarity rather than formal theory.
+        </p>
+
+        <h3>3. Evaluation</h3>
+        <p>
+          The implementation itself went well. My experience with PostgreSQL, Supabase, and SQLAlchemy helped me build the system quickly. The schema mostly conformed to third normal form, and the structure reflected my existing workflows with both system-generated and manually entered data.
+        </p>
+        <p>
+          Where I grew most was in evaluating my design. For example, I used UUIDs to prevent duplicate exam attempts for students taking tests on the same day. Initially, this was a practical workaround, but research helped me understand the trade-offs, such as the performance costs versus global uniqueness. I also reviewed my platform choice, comparing Supabase to alternatives like Google Cloud SQL and Amazon RDS, which I hadn’t done thoroughly before.
+        </p>
+        <p>
+          Some weaknesses became clear. I had not accounted for audit logging as part of GDPR compliance. Although I implemented role-based access and Row-Level Security, I overlooked the importance of detailed audit trails. I also discovered that my Instructor Compliance table did not fully adhere to third normal form, as it combined unrelated fields like employment details and training records, making historical tracking and scalability more difficult.
+        </p>
+
+        <h3>4. Analysis</h3>
+        <p>
+          Much of the implementation went smoothly because I was working within my comfort zone. However, that same comfort led me to skip over academic reasoning in my early design. I relied on what had worked before, rather than what was best supported by theory.
+        </p>
+        <p>
+          The turning point came when I had to defend my design using academic sources. For example, I had always defaulted to SQL because of familiarity. But exploring NoSQL databases like MongoDB made me recognize their potential value in handling unstructured or variable data, such as scanned task booklets or flexible course submissions.
+        </p>
+        <p>
+          I also became more aware of the assignment expectations. In the first part, I missed key points by not revisiting the brief. This time, I referred back to the instructions consistently, which helped me structure my executive summary around the required content.
+        </p>
+
+        <h3>5. Conclusion</h3>
+        <p>
+          I could have begun the evaluation earlier, allowing it to shape the design more intentionally. Addressing GDPR audit logging and table normalization from the start would have improved the final system. I also missed the opportunity to involve colleagues in reviewing the system, which could have revealed additional use cases or concerns.
+        </p>
+        <p>
+          While I eventually explored NoSQL platforms, I should have considered them more seriously at the beginning. Even though SQL was appropriate for structured academic data, a more balanced evaluation would have strengthened the report and provided broader insight into data architecture choices.
+        </p>
+
+        <h3>6. Action Plan</h3>
+        <p>
+          In future projects, I’ll make it a habit to reread assignment briefs at each milestone. This would have saved me from missing key requirements in earlier submissions. I’ll also validate design decisions with academic support from the outset, not only to improve quality but also to improve communication in collaborative or client settings.
+        </p>
+        <p>
+          Importantly, I’ll no longer dismiss NoSQL options by default. This project helped me understand their strengths in managing unstructured and semi-structured data, which is highly relevant for our college. For example, task booklet submissions and grading documentation could benefit from a document-oriented NoSQL solution.
+        </p>
+        <p>
+          This project has strengthened both my practical and theoretical understanding of database design. It taught me that it is not enough for a system to work. It must also be justifiable, scalable, and documented in a way that makes its structure and value clear to others.
+        </p>
+
+      </section>
+  </div>
+</article>
+
+
+
+            
+            
+        </div>
+    </article>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Unit 11: Individual Project - Executive Summary</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <style>
+        p {
+            text-align: left; /* Aligns all paragraph text to the left */
+        }
+    </style>
+</head>
+<body class="is-preload">
+
+    <!-- Navigation back to module -->
+    <nav id="nav">
+        <ul class="container">
+            <li><a href="mod_4_main.html">Back to Module 4: Deciphering Big Data</a></li>
+        </ul>
+    </nav>
+
+   <!-- Unit Content -->
+<article id="unit-content" class="wrapper style1">
+  <div class="container">
+    <section id="gfs-reflection">
+      <h2>Reflective Piece: Grandfather-Father-Son Backup Strategy <br> (Using Rolfe et al.’s Framework)</h2>
+
+      <!-- Buttons side by side (optional) -->
+      <div class="button-row">
+        <a href="docs\GFS_Backup_Evaluation.docx" class="button large scrolly" target="_blank">View Evaluation</a>
+      </div>
+      <br>
+
+      <section id="rolfe-reflection">
+
+        <h3>What?</h3>
+        <p>
+          While evaluating the Grandfather-Father-Son (GFS) backup system, I learned how it reduces storage needs by rotating daily, weekly, and monthly backups. However, one detail stood out: if even one daily (incremental) backup in the chain is corrupted, the entire restoration process can fail. That risk made me look at backup strategies in a new light.
+        </p>
+
+        <h3>So what?</h3>
+        <p>
+          I’ve always seen backing up as a safety net—something you do to avoid problems if data is lost. But I hadn’t seriously considered what happens if the <em>backup itself</em> is faulty. I now realise that the process of backing up requires just as much care and planning as any other part of the data pipeline. It’s not enough to just “have a backup”; the method, integrity, and recovery process all matter. Backup isn’t a simple checkbox, it’s a critical design decision that needs thoughtful execution.
+        </p>
+
+        <h3>Now what?</h3>
+        <p>
+          In my role, I’m often responsible for setting up basic data infrastructure. Until now, I treated backups as a side task—simple file copies or snapshots. Going forward, I’ll approach backup planning as a <strong>core part of data architecture</strong>. I’ll explore different backup strategies, including rotation systems like GFS, and evaluate them based on not just storage efficiency, but recoverability, resilience, and long-term reliability.
+        </p>
+
+        <h3>References</h3>
+        <ul>
+          <li>Gibraltar Solutions. (2023). <em>Mastering the Art of Modern Data Backup Strategies</em>. Available at: <a href="https://gibraltarsolutions.com/blog/mastering-the-art-of-modern-data-backup-strategies/" target="_blank">https://gibraltarsolutions.com/blog/mastering-the-art-of-modern-data-backup-strategies/</a></li>
+          <li>Rolfe, G., Freshwater, D., & Jasper, M. (2001). <em>Critical reflection for nursing and the helping professions: a user’s guide</em>. Basingstoke: Palgrave Macmillan.</li>
+        </ul>
+
+      </section>
+    </section>
+  </div>
+</article>
+
+</body>
+</html>
