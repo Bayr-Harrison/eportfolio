@@ -1,0 +1,132 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Unit 11: Individual Project - Executive Summary</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <style>
+        p {
+            text-align: left; /* Aligns all paragraph text to the left */
+        }
+    </style>
+</head>
+<body class="is-preload">
+
+    <!-- Navigation back to module -->
+    <nav id="nav">
+        <ul class="container">
+            <li><a href="mod_4_main.html">Back to Module 4: Deciphering Big Data</a></li>
+        </ul>
+    </nav>
+
+   <!-- Unit Content -->
+<article id="unit-content" class="wrapper style1">
+  <div class="container">
+    <section id="gibbs-reflection">
+   
+
+
+      <section id="unitX-reflection">
+
+        <h2>Reflective Piece: Big Data Module (Using Gibbs’ Reflective Cycle)</h2>
+    
+        <h3>1. Description</h3>
+        <p>
+            This module covered Big Data and its lifecycle from extraction and cleaning to transformation, compliance, and storage. These stages were explored across twelve units and reinforced through a group project in Unit 6 and a follow-up summary. In both, I addressed a simulated real-world problem: data fragmentation at the aviation maintenance college where I work.
+        </p>
+        <p>
+            The project involved designing a centralized relational database using PostgreSQL hosted on Supabase. It replaced inconsistent spreadsheets and siloed tools with a scalable, secure, normalized system aligned with Master Data Management (MDM) principles (Loshin, 2010). Core components included student lists, instructor compliance, attendance, and assessment results, linked by primary and foreign keys. Supabase’s Row-Level Security (RLS) supported GDPR compliance by restricting access based on roles.
+        </p>
+        <p>
+            The work reflected learning from Units 4–8, which emphasized data cleaning, normalization, and compliance. I applied Unit 4 by validating data before ingestion and Unit 5 through automation with Pandas and SQLAlchemy. Units 6 and 7 guided the database design, while Unit 8 focused on GDPR and regulatory frameworks.
+        </p>
+        <p>
+            In the individual project, I implemented the system and evaluated its design, comparing SQL to NoSQL, assessing platform choices, and reviewing compliance strategies. This helped me understand not just how to build a system, but why certain design choices are academically justified.
+        </p>
+    
+        <h3>2. Feelings</h3>
+        <p>
+            Initially, I felt confident taking the lead on the group project because of my professional background. My colleagues had asked me to join their team, which gave me a sense of responsibility to prove they’d made the right choice. This pressure led me to take on most of the technical work.
+        </p>
+        <p>
+            However, the mark I received was lower than expected, which was disheartening. I soon realized I had misread the assignment's intent. My implementation was solid, but the academic justification was weak. It was a humbling moment that prompted a more reflective approach for the second phase.
+        </p>
+        <p>
+            In the individual assignment, I felt more cautious but intentional. I regularly revisited the assignment brief and consulted academic literature to ensure my decisions were well-supported. This aligns with Gibbs’ (1988) notion that effective reflection includes confronting emotional responses and their influence on behaviour. Moon (2004) similarly notes that critical reflection turns experience into learning by challenging assumptions, which I began doing more consciously.
+        </p>
+    
+        <h3>3. Evaluation</h3>
+        <p>
+            Technically, both projects were successful. I built a working PostgreSQL system, normalized to third normal form, and implemented validation pipelines and RLS for access control. I also documented platform decisions, schema diagrams, and compliance strategies.
+        </p>
+        <p>
+            However, the group project lacked effective collaboration. One team member had limited technical experience, so much of the work fell to me and another member. We communicated via WhatsApp and set expectations using a group contract, which I included in the e-portfolio with meeting minutes. Ultimately, though, I led most of the development.
+        </p>
+        <p>
+            I learned that effective teamwork is not just doing the work but enabling others to contribute. I should have taken more initiative in selecting the team. Accepting the first invitation without assessing skills was a mistake. Going forward, I’ll be more strategic in forming teams and ensuring all members contribute meaningfully.
+        </p>
+        <p>
+            The second assignment let me correct earlier mistakes. I explored literature on NoSQL, GDPR audit logging, and schema design, which improved my work. I also re-evaluated earlier assumptions, like using UUIDs, and reconsidered them based on academic guidance (Leach et al., 2005; Peterson, 2018).
+        </p>
+    
+        <h3>4. Analysis</h3>
+        <p>
+            The biggest shift in my thinking came from challenging what I hadn’t previously questioned. I defaulted to SQL due to workplace familiarity, but reading Sadalage and Fowler (2012) and Cattell (2011) revealed strong use cases for NoSQL.
+        </p>
+        <p>
+            I now see MongoDB’s potential for managing unstructured data like scanned task booklets or instructor annotations. These don’t fit neatly into tabular schemas, and NoSQL offers more flexibility. I plan to experiment with MongoDB Atlas to explore its application at work.
+        </p>
+        <p>
+            Similarly, I now recognize that our current database mirrors spreadsheet logic rather than proper normalization. With a better grasp of 3NF and MDM, I plan to review and restructure tables to reduce redundancy and improve scalability.
+        </p>
+        <p>
+            I also came to appreciate academic justification. Instead of relying on instincts, I now question defaults, compare alternatives, and support decisions with evidence. This improved both my technical choices and how I communicate and defend them.
+        </p>
+    
+        <h3>5. Conclusion</h3>
+        <p>
+            Looking back, I gained as much from what went wrong as from what went right. The group project taught me the value of team composition, collaborative structure, and humility in leadership. I shouldn’t have accepted the invitation without assessing whether the team’s skills fit the project demands.
+        </p>
+        <p>
+            That said, we did try to collaborate. The group contract, shared notes, and logs show we attempted to manage the project responsibly. Still, the experience highlighted the importance of being proactive in team formation and delegation.
+        </p>
+        <p>
+            The individual project taught me that academic success requires more than doing—it requires defending, justifying, and reflecting on that work. I now understand that technical ability must be matched by critical thinking and academic discipline.
+        </p>
+    
+        <h3>6. Action Plan</h3>
+        <p>
+            In future modules, I’ll revisit assignment briefs regularly and validate decisions with academic sources from the start. I also plan to explore NoSQL platforms like MongoDB Atlas for managing unstructured data, such as scanned task booklets. At work, I’ll review our existing database against normalization principles and restructure tables to support scalability.
+        </p>
+        <p>
+            Collaboratively, I’ll be more selective in forming balanced teams and align roles with individual strengths. I’ll also integrate reflection early in each project. As Moon (2004) notes, reflection is most effective when embedded in the process, not added at the end.
+        </p>
+        <p>
+            This project helped me shift from simply building systems to critically evaluating them, reinforcing that sound practice is underpinned by reflective and academic thinking.
+        </p>
+    
+        <h3>References</h3>
+        <ul>
+            <li>Cattell, R. (2011) ‘Scalable SQL and NoSQL data stores’, <em>ACM SIGMOD Record</em>, 39(4), pp. 12–27. Available at: <a href="https://dl.acm.org/doi/10.1145/1978915.1978919" target="_blank">https://dl.acm.org/doi/10.1145/1978915.1978919</a></li>
+            <li>Connolly, T.M. and Begg, C.E. (2014) <em>Database Systems: A Practical Approach to Design, Implementation, and Management</em>. 6th ed. Harlow: Pearson.</li>
+            <li>GDPR.eu (n.d.) <em>A Guide to GDPR Data Privacy Requirements</em>. Available at: <a href="https://gdpr.eu/" target="_blank">https://gdpr.eu/</a></li>
+            <li>Gibbs, G. (1988) <em>Learning by Doing: A Guide to Teaching and Learning Methods</em>. Oxford: Oxford Polytechnic.</li>
+            <li>Leach, P.J., Mealling, M. and Salz, R. (2005) ‘A Universally Unique Identifier (UUID) URN Namespace’, <em>RFC 4122</em>. Available at: <a href="https://tools.ietf.org/html/rfc4122" target="_blank">https://tools.ietf.org/html/rfc4122</a></li>
+            <li>Loshin, D. (2010) <em>Master Data Management</em>. Boston: Morgan Kaufmann.</li>
+            <li>Moon, J.A. (2004) <em>A Handbook of Reflective and Experiential Learning: Theory and Practice</em>. London: RoutledgeFalmer.</li>
+            <li>Peterson, J. (2018) <em>SQL Performance Explained</em>. 2nd ed. Vienna: Markus Winand.</li>
+            <li>Sadalage, P.J. and Fowler, M. (2012) <em>NoSQL Distilled: A Brief Guide to the Emerging World of Polyglot Persistence</em>. Boston: Addison-Wesley. Available at: <a href="https://martinfowler.com/books/nosql.html" target="_blank">https://martinfowler.com/books/nosql.html</a></li>
+        </ul>
+    
+    </section>
+    
+
+
+
+            
+            
+        </div>
+    </article>
+</body>
+</html>
