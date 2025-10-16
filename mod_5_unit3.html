@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Module 1: Data Visualization - Unit 8</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <style>
+        p {
+            text-align: left; /* Aligns all paragraph text to the left */
+        }
+    </style>
+</head>
+<body class="is-preload">
+
+    <!-- Navigation back to module -->
+    <nav id="nav">
+        <ul class="container">
+            <li><a href="mod_5_main.html">Back to Module 5: Understanding Machine Learning</a></li>
+        </ul>
+    </nav>
+
+    <!-- Unit Content -->
+    <article id="unit-content" class="wrapper style1">
+        <div class="container">
+            <section id="reflection">
+                <h2>Reflective Piece, Using Driscoll’s Model, Polynomial Regression Models in Python</h2>
+
+                <!-- Artefact link(s) -->
+                <div class="button-row">
+                    <a href="docs/Polynomial Regression Models in Python - unit 3.pdf" class="button large scrolly" target="_blank">View Project Submission (PDF)</a>
+                </div>
+                <br>
+
+                <h3>What?</h3>
+                <p>
+                    For Unit 3, I put together a project showing how to build and compare a simple linear regression model and a polynomial regression model in Python, using the <em>Diabetes</em> dataset from <code>sklearn.datasets</code>. I decided to focus on BMI as the single independent variable and see how each model performed in predicting diabetes progression. This meant loading and preparing the dataset, splitting it into training and testing sets, fitting both models, and then checking how well they did using R², MSE, and MAE. I also made visualisations to see the differences in the fitted lines. To make sure I was not just following steps blindly, I read <em>Deep Learning: Foundations and Concepts</em> by C and H Bishop, and watched a couple of YouTube tutorials on regression and polynomial regression in Python.
+                </p>
+
+                <h3>So what?</h3>
+                <p>
+                    Before doing this, I thought adding more complexity to a model was always a good thing. Polynomial regression seemed like an upgrade, it can bend and twist to fit the data better, right? But actually, I learned that more flexibility is not always better. If you are not careful, you can end up overfitting and losing the ability to make accurate predictions on new data. Seeing this play out with real metrics in Python made the idea click for me in a way that reading about it never did. Another thing that stuck with me was the ethical side, this dataset relates to a medical condition, so getting predictions wrong could have serious consequences. It reminded me that building models is not just about getting the highest score, it is also about being responsible and transparent.
+                </p>
+
+                <h3>Now what?</h3>
+                <p>
+                    Working on this project made me think about how regression models could fit into my work at the aviation maintenance college. I deal with grades, exam results, and student and staff records every day. While I do not work with medical datasets, the idea of spotting trends and predicting outcomes is very relevant. For example, a similar approach could help identify students who might be at risk of failing based on their past results, attendance, or other factors. It could also be used to track staff compliance or forecast when training updates are likely to be needed. The key takeaway for me is that the same care I used in this project, avoiding over complicated models, checking accuracy, and explaining results clearly, applies just as much in my current role as it does in academic exercises.
+                </p>
+
+                <h3>References</h3>
+                <ul>
+                    <li>Bishop, C.M. and Bishop, H., 2023. <em>Deep Learning: Foundations and Concepts</em>. Springer Nature.</li>
+                    <li>McKendrick, I., 2021. <em>Polynomial Regression in Python</em>. YouTube. Available at: <a href="https://youtu.be/Q8UfQ_aoCeQ" target="_blank">https://youtu.be/Q8UfQ_aoCeQ</a> [Accessed 9 Aug. 2025].</li>
+                    <li>Davies, J., 2021. <em>Polynomial Regression with Scikit-Learn</em>. YouTube. Available at: <a href="https://youtu.be/aV_sRopNTrw" target="_blank">https://youtu.be/aV_sRopNTrw</a> [Accessed 9 Aug. 2025].</li>
+                    <li>Driscoll, J., 2007. <em>Practising Clinical Supervision, A Reflective Approach for Healthcare Professionals</em>. 2nd ed. Edinburgh, Elsevier.</li>
+                    <li>Atkins, S. and Murphy, K., 1994. Reflective practice. <em>Nursing Standard</em>, 8(39), pp.49–56.</li>
+                </ul>
+            </section>
+
+            
+            <!-- Buttons to open documents -->
+            <footer>
+                
+            </footer>
+        </div>
+    </article>
+</body>
+</html>

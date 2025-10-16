@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Module 1: Data Visualization - Unit 8</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <style>
+        p {
+            text-align: left; /* Aligns all paragraph text to the left */
+        }
+    </style>
+</head>
+<body class="is-preload">
+
+    <!-- Navigation back to module -->
+    <nav id="nav">
+        <ul class="container">
+            <li><a href="mod_5_main.html">Back to Module 5: Understanding Machine Learning</a></li>
+        </ul>
+    </nav>
+
+    <!-- Unit Content -->
+    <article id="unit-content" class="wrapper style1">
+        <div class="container">
+            <section id="reflection">
+                <h2>K Means Clustering Using the Iris Dataset (Driscoll's Reflective Cycle)</h2>
+
+           <!-- Artefact link(s) -->
+<div class="button-row">
+    <a href="docs/Understanding K Means Clustering.pdf" class="button large scrolly" target="_blank">
+        View Project Submission (PDF)
+    </a>
+</div>
+<br>
+
+<h3>What?</h3>
+<p>
+    For this unit, I explored K-Means Clustering by creating a clear and structured walkthrough using the classic Iris dataset. My aim was to deepen my understanding of unsupervised learning, specifically how K-Means groups data points based on similarity without using labels. 
+    I loaded and prepared the Iris dataset, scaled the features, and applied the Elbow Method to determine an appropriate number of clusters. The analysis showed a clear “elbow” at <em>k = 3</em>, which aligns with the three known species in the dataset. After applying K-Means with three clusters, I visualized the results using PCA for dimensionality reduction, comparing the model’s clusters with the actual species labels. 
+</p>
+<p>
+    The model successfully grouped the flowers with around 83% accuracy, performing particularly well with Iris setosa, which is distinctly separated in the dataset. The clusters for Iris versicolor and Iris virginica overlapped slightly, which is expected given the similarity of their measurements. 
+    This practical exercise helped me not only understand the mechanics of K-Means, but also how to structure a complete data analysis process from preparation to evaluation and visualization.
+</p>
+
+<h3>So What?</h3>
+<p>
+    Working through the Iris dataset gave me hands-on experience in applying unsupervised learning to real data. The exercise reinforced my understanding of key concepts such as feature scaling, inertia, the Elbow Method, and PCA visualization, which are essential in clustering analysis (Jain, 2010; Kodinariya and Makwana, 2013). 
+    It also highlighted that although K-Means is a simple algorithm, its effectiveness depends on good preprocessing and thoughtful parameter selection. The Iris dataset, often used for benchmarking clustering methods (Fisher, 1936), served as a clear example of how well the algorithm can perform on clean, well-structured data.
+</p>
+<p>
+    Reflecting on this exercise from a professional standpoint, I recognised several potential applications for K-Means clustering at the aviation college. For example, students in the foundation program take the PET exam multiple times throughout the semester, receiving scores in listening, reading, writing, and speaking. With over 2,000 students enrolled, manually identifying ability groups is not scalable. Applying K-Means clustering to these scores could allow us to automatically group students with similar performance profiles into clusters. 
+    This would support more targeted language training interventions, tailored to the specific strengths and weaknesses of each cluster, rather than applying a one-size-fits-all approach.
+</p>
+<p>
+    This connection between a classic dataset and a real institutional need showed me how unsupervised learning can be directly relevant to educational analytics. It also emphasised the importance of understanding algorithms deeply before applying them in operational contexts.
+</p>
+
+<h3>Now What?</h3>
+<p>
+    Moving forward, I plan to apply K-Means clustering to real student PET exam data to explore how effectively students can be grouped by their English skill profiles. This would involve collecting multiple PET score records per student, cleaning and standardizing the data, and then running K-Means to see whether meaningful clusters emerge. If successful, these clusters could be used to tailor language support more effectively, for example, grouping students who consistently score low in listening and reading into a specific support stream.
+</p>
+<p>
+    I also intend to experiment with different values of <em>k</em> and use evaluation methods such as silhouette scores to assess cluster quality. Additionally, I’ll document the process clearly so that it can be replicated or extended by others in the department. 
+    On a broader level, this reflection has shown me the value of using structured walkthroughs to learn new machine learning concepts. By writing out each step and visualizing the results, I not only strengthened my own understanding but created a resource I can reference and adapt for practical projects in the future.
+</p>
+
+<h3>References</h3>
+<ul>
+    <li>Driscoll, J., 2007. <em>Practising Clinical Supervision: A Reflective Approach for Healthcare Professionals</em>. 2nd ed. Edinburgh: Elsevier.</li>
+    <li>Fisher, R.A., 1936. The use of multiple measurements in taxonomic problems. <em>Annals of Eugenics</em>, 7(2), pp.179–188.</li>
+    <li>Jain, A.K., 2010. Data clustering: 50 years beyond K-Means. <em>Pattern Recognition Letters</em>, 31(8), pp.651–666.</li>
+    <li>Kodinariya, T.M. and Makwana, P.R., 2013. Review on determining number of clusters in K-Means clustering. <em>International Journal of Advance Research in Computer Science and Management Studies</em>, 1(6), pp.90–95.</li>
+</ul>
+
+
+            
+            <!-- Buttons to open documents -->
+            <footer>
+                
+            </footer>
+        </div>
+    </article>
+</body>
+</html>

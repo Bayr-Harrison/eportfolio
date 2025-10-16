@@ -1,0 +1,113 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Module 1: Data Visualization - Unit 8</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <style>
+        p {
+            text-align: left; /* Aligns all paragraph text to the left */
+        }
+    </style>
+</head>
+<body class="is-preload">
+
+    <!-- Navigation back to module -->
+    <nav id="nav">
+        <ul class="container">
+            <li><a href="mod_5_main.html">Back to Module 5: Understanding Machine Learning</a></li>
+        </ul>
+    </nav>
+
+    <!-- Unit Content -->
+    <article id="unit-content" class="wrapper style1">
+        <div class="container">
+            <section id="reflection">
+                <h2>Convolutional Neural Network: Individual Presentation (Gibbs’ Reflective Cycle)</h2>
+
+               <!-- Artefact link(s) -->
+<div class="button-row">
+  <a href="docs/Convolutional_Neural_Network_Presentation.pdf" class="button large scrolly" target="_blank">
+    View Project Submission (PDF)
+  </a>
+</div>
+<br>
+
+<h3>Description</h3>
+<p>
+  For this assignment, I developed an object recognition model using the CIFAR-10 dataset, focusing on Convolutional Neural Networks, data augmentation, and transfer learning. I began with a deliberately weak baseline CNN to set a low benchmark, then improved it by increasing architectural depth, tuning learning rate and batch size, adding regularisation, and introducing augmentation. Finally, I applied transfer learning using MobileNetV2 to compare a pretrained model against my custom network.
+</p>
+<p>
+  The project was completed individually, which, after a difficult group project previously, allowed me to plan the work in clear stages, learning the theory first, building and experimenting next, and only then shaping the presentation and transcript.
+</p>
+
+<h3>Feelings</h3>
+<p>
+  I felt excited and slightly intimidated at the start, since image recognition was new to me. I spent the first week learning the concepts, reading articles, watching tutorials, and explaining CNNs to a colleague to test my understanding. His questions exposed gaps that I then closed by returning to sources and interactive demos. I found the topic genuinely fascinating, that a system that processes ones and zeros can “see” by operating on pixel values in red, green, and blue channels. Early misclassifications were revealing and a bit amusing, for example bright yellow cars, trucks, and planes predicted as frogs, which showed the network had latched onto colour cues rather than shape.
+</p>
+
+<h3>Evaluation</h3>
+<p>
+  Investing early time in understanding CNNs paid off, implementation and tuning felt purposeful rather than trial and error. Building the slide deck framework early gave me a clear narrative, dataset, preprocessing, baseline, tuning, augmentation, transfer learning, comparison. Technically, accuracy progressed from about 57 percent for the baseline, to about 73 percent after tuning, to about 91 percent with MobileNetV2, which made the improvements easy to communicate.
+</p>
+<p>
+  Not everything worked first time. My initial transfer learning run stalled around 14 percent accuracy, I had not frozen and unfrozen layers correctly, and my learning rate was too high for fine tuning. Augmentation helped robustness but did not dramatically raise accuracy, which made sense on reflection because CIFAR-10 is balanced and relatively clean.
+</p>
+
+<h3>Analysis</h3>
+<p>
+  The project clarified why CNNs outperform classical methods like SVM or KNN on images. CNNs learn hierarchical spatial features directly from pixels, edges in shallow layers, textures and shapes in deeper layers, which removes the need for manual feature engineering. Building a custom CNN taught me how architecture and hyperparameters shape learning, while transfer learning showed how pretrained features from large datasets such as ImageNet can be adapted quickly and effectively. MobileNetV2 reached strong accuracy with modest tuning, consistent with findings that better ImageNet models tend to transfer well.
+</p>
+<p>
+  Working alone removed coordination overhead and let me focus on depth, although it also meant fewer alternative perspectives to challenge my choices as I went.
+</p>
+
+<h3>Conclusion</h3>
+<p>
+  I finished with a working understanding of how and why CNNs, augmentation, and transfer learning improve performance, not just code that runs. The step by step gains created a clear story for the presentation, and the final results validated the approach. The individual format suited careful learning, although it also highlighted the potential value of diverse viewpoints.
+</p>
+
+<h3>Action Plan</h3>
+<p>
+  This module, and especially this project, deepened my fascination with machine learning. It is striking that electronic systems operating on binary values can, through mathematics, perceive patterns and make sense of images. I plan to explore other architectures and learning paradigms, for example ResNets, DenseNets, and self supervised learning, and to add interpretability tools such as Grad-CAM to see what the network attends to.
+</p>
+<p>
+  Although I was relieved to work individually after the last project, I also wonder how much better the presentation could have been with a team, different perspectives, and shared experience. I want to combine the depth I gained here with future collaborative practice, learning the less intuitive, but essential, skills of guiding discussion, integrating differing ideas and skill sets, and managing trade offs in a group while still maintaining technical rigor.
+</p>
+
+<h3>References</h3>
+<ul>
+  <li>Bergstra, J. and Bengio, Y. (2012) ‘Random search for hyper-parameter optimization’, <em>Journal of Machine Learning Research</em>, 13(1), pp. 281–305.</li>
+  <li>Codebasics (2025) <em>Image classification using CNN (CIFAR10 dataset) | Deep Learning Tutorial 24 (TensorFlow &amp; Python)</em> [YouTube video]. Available at: <a href="https://youtu.be/7HPwo4wnJeA" target="_blank">https://youtu.be/7HPwo4wnJeA</a>.</li>
+  <li>Ekman, M. (2024) <em>Learning Deep Learning, From Perceptron to Large Language Models</em> [online video]. Pearson, O’Reilly. Available at: <a href="https://learning.oreilly.com/home/" target="_blank">https://learning.oreilly.com/home/</a>.</li>
+  <li>Goodfellow, I., Bengio, Y. and Courville, A. (2016) <em>Deep Learning</em>. Cambridge, MA, MIT Press.</li>
+  <li>IBM (no date) <em>Convolutional Neural Networks</em>. Available at: <a href="https://www.ibm.com/think/topics/convolutional-neural-networks" target="_blank">https://www.ibm.com/think/topics/convolutional-neural-networks</a>.</li>
+  <li>Kohavi, R. (1995) ‘A study of cross validation and bootstrap for accuracy estimation and model selection’, in <em>Proceedings of the 14th International Joint Conference on Artificial Intelligence</em> (IJCAI), pp. 1137–1145.</li>
+  <li>Kornblith, S., Shlens, J. and Le, Q.V. (2019) ‘Do better ImageNet models transfer better?’, in <em>Proceedings of the IEEE, CVF Conference on Computer Vision and Pattern Recognition</em> (CVPR), pp. 2661–2671.</li>
+  <li>Krizhevsky, A. (2009) <em>Learning multiple layers of features from tiny images</em>. Technical Report, University of Toronto.</li>
+  <li>Krizhevsky, A., Sutskever, I. and Hinton, G.E. (2012) ‘ImageNet classification with deep convolutional neural networks’, <em>Advances in Neural Information Processing Systems</em>, 25, pp. 1097–1105.</li>
+  <li>LeCun, Y., Bengio, Y. and Hinton, G. (2015) ‘Deep learning’, <em>Nature</em>, 521(7553), pp. 436–444.</li>
+  <li>Nair, V. and Hinton, G.E. (2010) ‘Rectified linear units improve restricted Boltzmann machines’, in <em>Proceedings of the 27th International Conference on Machine Learning</em> (ICML), Omnipress.</li>
+  <li>Pan, S.J. and Yang, Q. (2010) ‘A survey on transfer learning’, <em>IEEE Transactions on Knowledge and Data Engineering</em>, 22(10), pp. 1345–1359.</li>
+  <li>Polo Club (no date) <em>CNN Explainer</em>. Available at: <a href="https://poloclub.github.io/cnn-explainer/" target="_blank">https://poloclub.github.io/cnn-explainer/</a>.</li>
+  <li>Prathammodi001 (no date) ‘Convolutional Neural Networks for Dummies, A Step by Step CNN Tutorial’, <em>Medium</em>. Available at: <a href="https://medium.com/@prathammodi001/convolutional-neural-networks-for-dummies-a-step-by-step-cnn-tutorial-e68f464d608f" target="_blank">https://medium.com/@prathammodi001/...</a>.</li>
+  <li>Shorten, C. and Khoshgoftaar, T.M. (2019) ‘A survey on image data augmentation for deep learning’, <em>Journal of Big Data</em>, 6(60). doi, 10.1186/s40537-019-0197-0.</li>
+  <li>Sidana, N. (2025) ‘Using Convolutional Neural Networks on the CIFAR-10 Dataset’, <em>Medium</em>, 12 February. Available at: <a href="https://medium.com/@nsidana123/using-convolutional-neural-networks-on-the-cifar-10-dataset-1a2dc394cdd0" target="_blank">https://medium.com/@nsidana123/...</a>.</li>
+  <li>TensorFlow (no date) <em>CIFAR-10 dataset</em>. Available at: <a href="https://www.tensorflow.org/datasets/catalog/cifar10" target="_blank">https://www.tensorflow.org/datasets/catalog/cifar10</a>.</li>
+  <li>Towards Data Science (no date) ‘Deep Learning with CIFAR-10 Image Classification’. Available at: <a href="https://towardsdatascience.com/deep-learning-with-cifar-10-image-classification-64ab92110d79/" target="_blank">https://towardsdatascience.com/...</a>.</li>
+  <li>Ultralytics (2024) <em>CIFAR-10 Dataset</em>. Available at: <a href="https://docs.ultralytics.com/datasets/classify/cifar10/" target="_blank">https://docs.ultralytics.com/datasets/classify/cifar10/</a>.</li>
+  <li>Yosinski, J., Clune, J., Bengio, Y. and Lipson, H. (2014) ‘How transferable are features in deep neural networks?’, <em>Advances in Neural Information Processing Systems</em>, 27, pp. 3320–3328.</li>
+</ul>
+
+
+
+            
+            <!-- Buttons to open documents -->
+            <footer>
+                
+            </footer>
+        </div>
+    </article>
+</body>
+</html>
